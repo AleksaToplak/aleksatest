@@ -1,27 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
-    <h1>Technologies of Frontend</h1>
-   
-    <dl>
-        <dt><b><mark>HTML</mark></b>
-        <dd>You can learn about this at <a href="#" target="_blank">ITAcademy</a></dd></dt>
-        <dt><b><mark>CSS</mark></b>
-        <dd>You can also learn about this at <a href="#" target="_blank">ITAcademy</a></dd></dt>
-        <dt><b><mark>Javascript</mark></b>
-        <dd>You can also learn about this at <a href="#" target="_blank">ITAcademy</a></dd></dt>
-    </dl>
-    <h2>Additional notes</h2>
-    <ol>
-        <li><a href="#" target="_blank">Mozila developer</a></li>
-        <li><a href="#" target="_blank">W3Schools</a></li>
-    </ol>
+    <title>Advanced CSS - Assignment 1</title>
+    <style>
+a {
+    color: green;
+}
+a[target="_blank"] {
+    color: red;
+}
 
+div#first-div > p::after {
+content: " - NEW ";
+color: yellow;
+font-style: italic;
+}
+
+
+#second-div p:nth-child(2n + 2) {
+    color: red;
     
+}
+
+#second-div p:nth-child(2n + 1) {
+    color: blue;
+}
+
+body> p:hover:last-of-type {
+  
+    font-style: italic;
+ 
+    
+}
+
+    </style>
+</head>
+
+<body>
+    <h1>Main Heading</h1>
+    <p>Paragraph 1</p>
+    <a href="https://www.google.com/">Google</a>
+    <a href="https://www.google.com/doodles">Google Doodles</a>
+    <a href="https://www.link-group.eu/" target="_blank">Goto Link Group</a>
+    <div id="first-div">
+        <h2>Subheading</h2>
+        <p>Paragraph 2</p>
+        <p>Paragraph 3</p>
+        <div id="second-div">
+            <h3>Sub subheading</h3>
+            <p>Paragraph 4</p>
+            <p>Paragraph 5</p>
+            <p>Paragraph 6</p>
+            <p>Paragraph 7</p>
+            <p>Paragraph 8</p>
+        </div>
+    </div>
+    <p>Paragraph 9</p>
+    <p>Paragraph 10</p>
 </body>
+
 </html>
